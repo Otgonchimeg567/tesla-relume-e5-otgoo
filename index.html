@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tesla — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__brand">
+        <a href="#" class="logo" aria-label="Home"><img src="assets/tesla-wordmark.svg" width="120" height="12" alt="Tesla" /></a>
+      </div>
+      <nav class="navbar__links" id="nav-links">
+        <a href="#" class="nav-link">Vehicles</a>
+        <a href="#" class="nav-link">Energy</a>
+        <a href="#" class="nav-link">Charging</a>
+        <a href="#" class="nav-link">Discover</a>
+        <button type="button" class="nav-link nav-link--dropdown">
+          Shop <img src="assets/chevron-down.svg" width="24" height="24" alt="" />
+        </button>
+      </nav>
+      <div class="navbar__actions">
+        <a href="#" class="btn btn--primary btn--sm">Test Drive</a>
+        <button type="button" class="navbar__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero__bg" src="assets/hero.png" alt="" />
+      <div class="hero__content">
+        <h1 class="h1 hero__title">Model 3</h1>
+        <div class="actions">
+          <a href="#" class="btn btn--primary">Order Now</a>
+          <a href="#" class="btn btn--secondary btn--on-dark">Button</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Self-Driving -->
+    <section class="section">
+      <div class="container">
+        <div class="card card--feature">
+          <div class="card__body">
+            <div class="stack-32">
+              <div class="section-title">
+                <h2 class="h2">Full Self-Driving (Supervised)</h2>
+                <p class="text-medium">Makes every drive easier. Subscribe for $99/mo.</p>
+              </div>
+              <div class="fsd-stats">
+                <div class="fsd-stat">
+                  <p class="h2">7x</p>
+                  <p>Fewer Collisions</p>
+                </div>
+                <div class="fsd-stat">
+                  <p class="h2">17,161,171,133</p>
+                  <p>Miles Driven</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions actions--24">
+              <a href="#" class="btn btn--secondary">Schedule Demo</a>
+              <a href="#" class="btn btn--link">Learn more <img src="assets/chevron-right.svg" width="24" height="24" alt="" /></a>
+            </div>
+          </div>
+          <button type="button" class="lightbox" aria-label="Play video">
+            <img class="lightbox__bg" src="assets/fsd-video.png" alt="" />
+            <img class="lightbox__play" src="assets/play-button.svg" width="64" height="64" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vehicle models -->
+    <section class="section">
+      <div class="container stack-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Vehicle models</h2>
+          <p class="text-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="slider" data-slider>
+          <div class="slider__track vehicles" data-track>
+            <article class="vehicle">
+              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
+              <div class="vehicle__content">
+                <img src="assets/placeholder-logo-1.svg" width="120" height="48" alt="" />
+                <p class="vehicle__desc">Model Y L<br />Long Wheelbase Midsize SUV</p>
+                <div>
+                  <p class="vehicle__name">Model Y L Premium</p>
+                  <p>Starting at $61,990</p>
+                </div>
+              </div>
+            </article>
+            <article class="vehicle">
+              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
+              <div class="vehicle__content">
+                <img src="assets/placeholder-logo-2.svg" width="120" height="48" alt="" />
+                <p class="vehicle__desc">Sport Sedan</p>
+                <div>
+                  <p class="vehicle__name">Model 3</p>
+                  <p>Lease From $439</p>
+                </div>
+              </div>
+            </article>
+            <article class="vehicle">
+              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
+              <div class="vehicle__content">
+                <img src="assets/placeholder-logo-1.svg" width="120" height="48" alt="" />
+                <p class="vehicle__desc">Midsize SUV</p>
+                <div>
+                  <p class="vehicle__name">Model Y</p>
+                  <p>Lease From $499</p>
+                </div>
+              </div>
+            </article>
+            <article class="vehicle">
+              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
+              <div class="vehicle__content">
+                <img src="assets/placeholder-logo-2.svg" width="120" height="48" alt="" />
+                <p class="vehicle__desc">Utility Truck</p>
+                <div>
+                  <p class="vehicle__name">Utility Truck</p>
+                  <p>Lease From</p>
+                </div>
+              </div>
+            </article>
+            <article class="vehicle">
+              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
+              <div class="vehicle__content">
+                <img src="assets/placeholder-logo-1.svg" width="120" height="48" alt="" />
+                <p class="vehicle__desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                <div>
+                  <p class="vehicle__name">Name Surname</p>
+                  <p>Position, Company name</p>
+                </div>
+              </div>
+            </article>
+            <article class="vehicle">
+              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
+              <div class="vehicle__content">
+                <img src="assets/placeholder-logo-2.svg" width="120" height="48" alt="" />
+                <p class="vehicle__desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                <div>
+                  <p class="vehicle__name">Name Surname</p>
+                  <p>Position, Company name</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slider__controls">
+            <img src="assets/slider-dots-vehicles.svg" width="88" height="8" alt="" />
+            <div class="slider__buttons">
+              <button type="button" class="slider__arrow" data-prev aria-label="Previous"><img src="assets/arrow-back.svg" width="24" height="24" alt="" /></button>
+              <button type="button" class="slider__arrow" data-next aria-label="Next"><img src="assets/arrow-forward.svg" width="24" height="24" alt="" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Offers -->
+    <section class="section">
+      <div class="container">
+        <div class="card card--cta">
+          <div class="card__body">
+            <div class="section-title">
+              <h2 class="h2">Current Offers</h2>
+              <p class="text-medium">Explore limited-time offers on Tesla vehicles.</p>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn--primary">Learn More</a>
+            </div>
+          </div>
+          <div class="card__media"><img src="assets/current-offers.png" alt="Tesla vehicles" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shareholder Meeting -->
+    <section class="section">
+      <div class="container">
+        <div class="card card--cta">
+          <div class="card__body">
+            <div class="section-title">
+              <h2 class="h2">2026 Annual Shareholder Meeting</h2>
+              <p class="text-medium">The future of Tesla is in your hands. Learn why your vote matters.</p>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn--primary">Learn More</a>
+            </div>
+          </div>
+          <div class="card__media"><img src="assets/shareholder-meeting.png" alt="Tesla Cybercab" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Your Charge (map) -->
+    <section class="charge-header">
+      <div class="section">
+        <div class="container">
+          <h2 class="h1 section-title--narrow">Find Your Charge</h2>
+        </div>
+      </div>
+      <img class="charge-header__map" src="assets/charge-map.png" alt="Map of Tesla Superchargers" />
+    </section>
+
+    <!-- Stats -->
+    <section class="section">
+      <div class="container stats">
+        <div class="stats__intro">
+          <div class="section-title">
+            <h2 class="h2">Find Your Charge</h2>
+            <p class="text-medium">View the network of Tesla Superchargers and Destination Chargers available near you.</p>
+          </div>
+          <div class="actions actions--24">
+            <a href="#" class="btn btn--secondary">View New York</a>
+            <a href="#" class="btn btn--link">Learn More <img src="assets/chevron-right.svg" width="24" height="24" alt="" /></a>
+          </div>
+        </div>
+        <div class="stats__list">
+          <div class="stat">
+            <p class="stat__value">428</p>
+            <p class="h6">Superchargers</p>
+          </div>
+          <div class="stat">
+            <p class="stat__value">26</p>
+            <p class="h6">Destination Chargers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Products -->
+    <section class="section">
+      <div class="container stack-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Other Products</h2>
+          <p class="text-medium">From the long wheelbase Model Y L to the sport sedan Model 3, each car is built for the road ahead.</p>
+        </div>
+        <div class="slider slider--gallery" data-slider>
+          <div class="slider__track gallery" data-track>
+            <img class="gallery__item" src="assets/product-1.png" alt="Solar Roof" />
+            <img class="gallery__item" src="assets/product-2.png" alt="Product 2" />
+            <img class="gallery__item" src="assets/product-3.png" alt="Product 3" />
+          </div>
+          <div class="slider__controls">
+            <img src="assets/slider-dots-gallery.svg" width="40" height="8" alt="" />
+            <div class="slider__buttons">
+              <button type="button" class="slider__arrow" data-prev aria-label="Previous"><img src="assets/arrow-back.svg" width="24" height="24" alt="" /></button>
+              <button type="button" class="slider__arrow" data-next aria-label="Next"><img src="assets/arrow-forward.svg" width="24" height="24" alt="" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="#" class="logo" aria-label="Home"><img src="assets/tesla-wordmark.svg" width="120" height="12" alt="Tesla" /></a>
+        <nav class="footer__links">
+          <a href="#">Vehicles</a>
+          <a href="#">Energy</a>
+          <a href="#">Charging</a>
+          <a href="#">Discover</a>
+          <a href="#">Shop</a>
+        </nav>
+      </div>
+      <div class="footer__credits">
+        <img class="footer__divider" src="assets/divider.svg" width="1280" height="1" alt="" />
+        <div class="footer__row">
+          <p>© 2025 Tesla. All rights reserved.</p>
+          <div class="footer__legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

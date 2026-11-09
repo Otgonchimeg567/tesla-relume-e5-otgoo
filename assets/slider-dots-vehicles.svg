@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="88" height="8" viewBox="0 0 88 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Slider Dots">
+<circle id="Dot" cx="4" cy="4" r="4" fill="#020208"/>
+<circle id="Dot_2" opacity="0.2" cx="20" cy="4" r="4" fill="#020208"/>
+<circle id="Dot_3" opacity="0.2" cx="36" cy="4" r="4" fill="#020208"/>
+<circle id="Dot_4" opacity="0.2" cx="52" cy="4" r="4" fill="#020208"/>
+<circle id="Dot_5" opacity="0.2" cx="68" cy="4" r="4" fill="#020208"/>
+<circle id="Dot_6" opacity="0.2" cx="84" cy="4" r="4" fill="#020208"/>
+</g>
+</svg>
