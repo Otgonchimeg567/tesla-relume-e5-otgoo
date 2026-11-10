@@ -1,298 +1,2377 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tesla — Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Electric Cars, Solar &amp; Clean Energy | Tesla</title>
+<meta name="description" content="Static HTML/CSS learning clone of the tesla.com home page.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="navbar__container">
-      <div class="navbar__brand">
-        <a href="#" class="logo" aria-label="Home"><img src="assets/tesla-wordmark.svg" width="120" height="12" alt="Tesla" /></a>
-      </div>
-      <nav class="navbar__links" id="nav-links">
-        <a href="#" class="nav-link">Vehicles</a>
-        <a href="#" class="nav-link">Energy</a>
-        <a href="#" class="nav-link">Charging</a>
-        <a href="#" class="nav-link">Discover</a>
-        <button type="button" class="nav-link nav-link--dropdown">
-          Shop <img src="assets/chevron-down.svg" width="24" height="24" alt="" />
-        </button>
-      </nav>
-      <div class="navbar__actions">
-        <a href="#" class="btn btn--primary btn--sm">Test Drive</a>
-        <button type="button" class="navbar__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <img class="hero__bg" src="assets/hero.png" alt="" />
-      <div class="hero__content">
-        <h1 class="h1 hero__title">Model 3</h1>
-        <div class="actions">
-          <a href="#" class="btn btn--primary">Order Now</a>
-          <a href="#" class="btn btn--secondary btn--on-dark">Button</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Full Self-Driving -->
-    <section class="section">
-      <div class="container">
-        <div class="card card--feature">
-          <div class="card__body">
-            <div class="stack-32">
-              <div class="section-title">
-                <h2 class="h2">Full Self-Driving (Supervised)</h2>
-                <p class="text-medium">Makes every drive easier. Subscribe for $99/mo.</p>
-              </div>
-              <div class="fsd-stats">
-                <div class="fsd-stat">
-                  <p class="h2">7x</p>
-                  <p>Fewer Collisions</p>
-                </div>
-                <div class="fsd-stat">
-                  <p class="h2">17,161,171,133</p>
-                  <p>Miles Driven</p>
-                </div>
-              </div>
-            </div>
-            <div class="actions actions--24">
-              <a href="#" class="btn btn--secondary">Schedule Demo</a>
-              <a href="#" class="btn btn--link">Learn more <img src="assets/chevron-right.svg" width="24" height="24" alt="" /></a>
-            </div>
-          </div>
-          <button type="button" class="lightbox" aria-label="Play video">
-            <img class="lightbox__bg" src="assets/fsd-video.png" alt="" />
-            <img class="lightbox__play" src="assets/play-button.svg" width="64" height="64" alt="" />
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Vehicle models -->
-    <section class="section">
-      <div class="container stack-80">
-        <div class="section-title section-title--narrow">
-          <h2 class="h2">Vehicle models</h2>
-          <p class="text-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="slider" data-slider>
-          <div class="slider__track vehicles" data-track>
-            <article class="vehicle">
-              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
-              <div class="vehicle__content">
-                <img src="assets/placeholder-logo-1.svg" width="120" height="48" alt="" />
-                <p class="vehicle__desc">Model Y L<br />Long Wheelbase Midsize SUV</p>
-                <div>
-                  <p class="vehicle__name">Model Y L Premium</p>
-                  <p>Starting at $61,990</p>
-                </div>
-              </div>
-            </article>
-            <article class="vehicle">
-              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
-              <div class="vehicle__content">
-                <img src="assets/placeholder-logo-2.svg" width="120" height="48" alt="" />
-                <p class="vehicle__desc">Sport Sedan</p>
-                <div>
-                  <p class="vehicle__name">Model 3</p>
-                  <p>Lease From $439</p>
-                </div>
-              </div>
-            </article>
-            <article class="vehicle">
-              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
-              <div class="vehicle__content">
-                <img src="assets/placeholder-logo-1.svg" width="120" height="48" alt="" />
-                <p class="vehicle__desc">Midsize SUV</p>
-                <div>
-                  <p class="vehicle__name">Model Y</p>
-                  <p>Lease From $499</p>
-                </div>
-              </div>
-            </article>
-            <article class="vehicle">
-              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
-              <div class="vehicle__content">
-                <img src="assets/placeholder-logo-2.svg" width="120" height="48" alt="" />
-                <p class="vehicle__desc">Utility Truck</p>
-                <div>
-                  <p class="vehicle__name">Utility Truck</p>
-                  <p>Lease From</p>
-                </div>
-              </div>
-            </article>
-            <article class="vehicle">
-              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
-              <div class="vehicle__content">
-                <img src="assets/placeholder-logo-1.svg" width="120" height="48" alt="" />
-                <p class="vehicle__desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
-                <div>
-                  <p class="vehicle__name">Name Surname</p>
-                  <p>Position, Company name</p>
-                </div>
-              </div>
-            </article>
-            <article class="vehicle">
-              <img class="vehicle__bg" src="assets/vehicle-card.png" alt="" />
-              <div class="vehicle__content">
-                <img src="assets/placeholder-logo-2.svg" width="120" height="48" alt="" />
-                <p class="vehicle__desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
-                <div>
-                  <p class="vehicle__name">Name Surname</p>
-                  <p>Position, Company name</p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="slider__controls">
-            <img src="assets/slider-dots-vehicles.svg" width="88" height="8" alt="" />
-            <div class="slider__buttons">
-              <button type="button" class="slider__arrow" data-prev aria-label="Previous"><img src="assets/arrow-back.svg" width="24" height="24" alt="" /></button>
-              <button type="button" class="slider__arrow" data-next aria-label="Next"><img src="assets/arrow-forward.svg" width="24" height="24" alt="" /></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Current Offers -->
-    <section class="section">
-      <div class="container">
-        <div class="card card--cta">
-          <div class="card__body">
-            <div class="section-title">
-              <h2 class="h2">Current Offers</h2>
-              <p class="text-medium">Explore limited-time offers on Tesla vehicles.</p>
-            </div>
-            <div class="actions">
-              <a href="#" class="btn btn--primary">Learn More</a>
-            </div>
-          </div>
-          <div class="card__media"><img src="assets/current-offers.png" alt="Tesla vehicles" /></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Shareholder Meeting -->
-    <section class="section">
-      <div class="container">
-        <div class="card card--cta">
-          <div class="card__body">
-            <div class="section-title">
-              <h2 class="h2">2026 Annual Shareholder Meeting</h2>
-              <p class="text-medium">The future of Tesla is in your hands. Learn why your vote matters.</p>
-            </div>
-            <div class="actions">
-              <a href="#" class="btn btn--primary">Learn More</a>
-            </div>
-          </div>
-          <div class="card__media"><img src="assets/shareholder-meeting.png" alt="Tesla Cybercab" /></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Find Your Charge (map) -->
-    <section class="charge-header">
-      <div class="section">
-        <div class="container">
-          <h2 class="h1 section-title--narrow">Find Your Charge</h2>
-        </div>
-      </div>
-      <img class="charge-header__map" src="assets/charge-map.png" alt="Map of Tesla Superchargers" />
-    </section>
-
-    <!-- Stats -->
-    <section class="section">
-      <div class="container stats">
-        <div class="stats__intro">
-          <div class="section-title">
-            <h2 class="h2">Find Your Charge</h2>
-            <p class="text-medium">View the network of Tesla Superchargers and Destination Chargers available near you.</p>
-          </div>
-          <div class="actions actions--24">
-            <a href="#" class="btn btn--secondary">View New York</a>
-            <a href="#" class="btn btn--link">Learn More <img src="assets/chevron-right.svg" width="24" height="24" alt="" /></a>
-          </div>
-        </div>
-        <div class="stats__list">
-          <div class="stat">
-            <p class="stat__value">428</p>
-            <p class="h6">Superchargers</p>
-          </div>
-          <div class="stat">
-            <p class="stat__value">26</p>
-            <p class="h6">Destination Chargers</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Other Products -->
-    <section class="section">
-      <div class="container stack-80">
-        <div class="section-title section-title--narrow">
-          <h2 class="h2">Other Products</h2>
-          <p class="text-medium">From the long wheelbase Model Y L to the sport sedan Model 3, each car is built for the road ahead.</p>
-        </div>
-        <div class="slider slider--gallery" data-slider>
-          <div class="slider__track gallery" data-track>
-            <img class="gallery__item" src="assets/product-1.png" alt="Solar Roof" />
-            <img class="gallery__item" src="assets/product-2.png" alt="Product 2" />
-            <img class="gallery__item" src="assets/product-3.png" alt="Product 3" />
-          </div>
-          <div class="slider__controls">
-            <img src="assets/slider-dots-gallery.svg" width="40" height="8" alt="" />
-            <div class="slider__buttons">
-              <button type="button" class="slider__arrow" data-prev aria-label="Previous"><img src="assets/arrow-back.svg" width="24" height="24" alt="" /></button>
-              <button type="button" class="slider__arrow" data-next aria-label="Next"><img src="assets/arrow-forward.svg" width="24" height="24" alt="" /></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__top">
-        <a href="#" class="logo" aria-label="Home"><img src="assets/tesla-wordmark.svg" width="120" height="12" alt="Tesla" /></a>
-        <nav class="footer__links">
-          <a href="#">Vehicles</a>
-          <a href="#">Energy</a>
-          <a href="#">Charging</a>
-          <a href="#">Discover</a>
-          <a href="#">Shop</a>
-        </nav>
-      </div>
-      <div class="footer__credits">
-        <img class="footer__divider" src="assets/divider.svg" width="1280" height="1" alt="" />
-        <div class="footer__row">
-          <p>© 2025 Tesla. All rights reserved.</p>
-          <div class="footer__legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookies Settings</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<!-- Learning clone built from a Firecrawl scrape of https://www.tesla.com/ (Nov 2026).
+       Images are hot-linked from Tesla's public CDN. Not affiliated with Tesla, Inc. -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+<a class="logo" href="#" aria-label="Navigate to Home">
+<svg viewBox="0 0 342 35" aria-hidden="true">
+<path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7">
+</path>
+</svg>
+</a>
+<nav class="main-nav desktop-nav" aria-label="Main">
+<!-- Vehicles -->
+<div class="nav-item">
+<button class="nav-link" type="button" aria-haspopup="true">Vehicles</button>
+<div class="mega">
+<div class="mega-cards">
+<div class="mega-card">
+<a href="https://www.tesla.com/model3">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-3-APAC-LHD.jpg" alt="Model 3" loading="lazy">
+</a>
+<h3>Model 3</h3>
+<div class="links">
+<a href="https://www.tesla.com/model3">Learn</a>
+<a href="https://www.tesla.com/model3/design?cfg=$MT369">Order</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/modely">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-Y-2-v3.jpg" alt="Model Y" loading="lazy">
+</a>
+<h3>Model Y</h3>
+<div class="links">
+<a href="modely.html">Learn</a>
+<a href="https://www.tesla.com/modely/design?cfg=$MTY83,$PN03">Order</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/cybertruck">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Cybertruck-1x.png" alt="Cybertruck" loading="lazy">
+</a>
+<h3>Cybertruck</h3>
+<div class="links">
+<a href="https://www.tesla.com/cybertruck">Learn</a>
+<a href="https://www.tesla.com/cybertruck/design">Order</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/roadster">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Roadster.jpg" alt="Roadster" loading="lazy">
+</a>
+<h3>Roadster</h3>
+<div class="links">
+<a href="https://www.tesla.com/roadster">Learn</a>
+<a href="https://www.tesla.com/roadster/reserve">Reserve</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/fsd">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-FSD.jpg" alt="Full Self-Driving (Supervised)" loading="lazy">
+</a>
+<h3>Full Self-Driving (Supervised)</h3>
+<div class="links">
+<a href="https://www.tesla.com/fsd">Learn</a>
+<a href="https://www.tesla.com/drive">Experience</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/new">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Inventory-v3.png" alt="Inventory" loading="lazy">
+</a>
+<h3>Inventory</h3>
+<div class="links">
+<a href="https://www.tesla.com/new">New</a>
+<a href="https://www.tesla.com/used">Certified Pre-Owned</a>
+</div>
+</div>
+</div>
+<ul class="mega-list">
+<li>
+<a href="https://www.tesla.com/current-offers">Current Offers</a>
+</li>
+<li>
+<a href="https://www.tesla.com/drive">Demo Drive</a>
+</li>
+<li>
+<a href="https://www.tesla.com/tradein">Trade-in</a>
+</li>
+<li>
+<a href="https://www.tesla.com/fsd/safety">Vehicle Safety Report</a>
+</li>
+<li>
+<a href="https://www.tesla.com/pre-owned">Certified Pre-Owned</a>
+</li>
+<li>
+<a href="https://www.tesla.com/trips">Trip Planner</a>
+</li>
+<li>
+<a href="https://www.tesla.com/features">Features</a>
+</li>
+<li>
+<a href="https://www.tesla.com/choose">Help Me Choose</a>
+</li>
+<li>
+<a href="https://www.tesla.com/compare">Compare</a>
+</li>
+<li>
+<a href="https://www.tesla.com/safety">Safety</a>
+</li>
+<li>
+<a href="https://www.tesla.com/fleet">Fleet</a>
+</li>
+<li>
+<a href="https://www.tesla.com/models">Model S</a>
+</li>
+<li>
+<a href="https://www.tesla.com/modelx">Model X</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Energy -->
+<div class="nav-item">
+<button class="nav-link" type="button" aria-haspopup="true">Energy</button>
+<div class="mega">
+<div class="mega-cards">
+<div class="mega-card">
+<a href="https://www.tesla.com/solarpanels">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Energy-Solar-Panels.png" alt="Solar Panels" loading="lazy">
+</a>
+<h3>Solar Panels</h3>
+<div class="links">
+<a href="https://www.tesla.com/solarpanels">Learn</a>
+<a href="https://www.tesla.com/energy/design?poi=solarpanels">Order</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/powerwall">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Energy-Powerwall-US.png" alt="Powerwall" loading="lazy">
+</a>
+<h3>Powerwall</h3>
+<div class="links">
+<a href="https://www.tesla.com/powerwall">Learn</a>
+<a href="https://www.tesla.com/powerwall/design">Order</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/megapack">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Energy-Megapack.png" alt="Megapack" loading="lazy">
+</a>
+<h3>Megapack</h3>
+<div class="links">
+<a href="https://www.tesla.com/megapack">Learn</a>
+</div>
+</div>
+</div>
+<ul class="mega-list">
+<li>
+<a href="https://www.tesla.com/solar-virtual-consultations">Schedule a Consultation</a>
+</li>
+<li>
+<a href="https://www.tesla.com/tesla-home">Tesla Home</a>
+</li>
+<li>
+<a href="https://www.tesla.com/why-solar">Why Solar</a>
+</li>
+<li>
+<a href="https://www.tesla.com/support/energy/powerwall/learn/incentives">Incentives</a>
+</li>
+<li>
+<a href="https://www.tesla.com/support/energy">Support</a>
+</li>
+<li>
+<a href="https://www.tesla.com/support/energy/powerwall/installer-resources/partner-with-tesla">Partner with Tesla</a>
+</li>
+<li>
+<a href="https://www.tesla.com/commercial">Commercial</a>
+</li>
+<li>
+<a href="https://www.tesla.com/utilities">Utilities</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Charging -->
+<div class="nav-item">
+<button class="nav-link" type="button" aria-haspopup="true">Charging</button>
+<div class="mega">
+<div class="mega-cards">
+<div class="mega-card">
+<a href="https://www.tesla.com/charging">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Charging.png" alt="Charging" loading="lazy">
+</a>
+<h3>Charging</h3>
+<div class="links">
+<a href="https://www.tesla.com/charging">Learn</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/home-charging">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Home-Charging.png" alt="Home Charging" loading="lazy">
+</a>
+<h3>Home Charging</h3>
+<div class="links">
+<a href="https://www.tesla.com/home-charging">Learn</a>
+<a href="https://shop.tesla.com/category/charging#charging.at-home">Shop</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/supercharger">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Supercharging-NA.png" alt="Supercharging" loading="lazy">
+</a>
+<h3>Supercharging</h3>
+<div class="links">
+<a href="https://www.tesla.com/supercharger">Learn</a>
+<a href="https://www.tesla.com/findus">Find</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/commercial-wall-connector">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Charging-for-Business.png" alt="Wall Connector for Business" loading="lazy">
+</a>
+<h3>Wall Connector for Business</h3>
+<div class="links">
+<a href="https://www.tesla.com/commercial-wall-connector">Learn</a>
+<a href="https://www.tesla.com/commercial-wall-connector/get">Order</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/supercharger-for-business">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Supercharger-For-Business.png" alt="Supercharger for Business" loading="lazy">
+</a>
+<h3>Supercharger for Business</h3>
+<div class="links">
+<a href="https://www.tesla.com/supercharger-for-business">Learn</a>
+<a href="https://www.tesla.com/supercharger-for-business/get">Order</a>
+</div>
+</div>
+</div>
+<ul class="mega-list">
+<li>
+<a href="https://www.tesla.com/help-me-charge">Help Me Charge</a>
+</li>
+<li>
+<a href="https://www.tesla.com/charging-calculator">Charging Calculator</a>
+</li>
+<li>
+<a href="https://www.tesla.com/NACS">Charging With NACS</a>
+</li>
+<li>
+<a href="https://www.tesla.com/supercharger-voting/overview">Supercharger Voting</a>
+</li>
+<li>
+<a href="https://www.tesla.com/host-a-supercharger">Host a Supercharger</a>
+</li>
+<li>
+<a href="https://www.tesla.com/powershare">Powershare</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Robotaxi -->
+<div class="nav-item">
+<button class="nav-link" type="button" aria-haspopup="true">Robotaxi</button>
+<div class="mega">
+<div class="mega-cards" style="grid-template-columns: 220px">
+<div class="mega-card">
+<a href="https://www.tesla.com/robotaxi">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/v1792519368/Mega-Menu-Robotaxi.png" alt="Robotaxi" loading="lazy">
+</a>
+<h3>Robotaxi</h3>
+<div class="links">
+<a href="https://www.tesla.com/robotaxi">Learn</a>
+</div>
+</div>
+</div>
+<ul class="mega-list">
+<li>
+<a href="https://www.tesla.com/robotaxi/safety">Safety</a>
+</li>
+<li>
+<a href="https://www.tesla.com/robotaxi/first-responders">First Responders</a>
+</li>
+<li>
+<a href="https://www.tesla.com/support/robotaxi">Support</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Semi -->
+<div class="nav-item">
+<button class="nav-link" type="button" aria-haspopup="true">Semi</button>
+<div class="mega">
+<div class="mega-cards" style="grid-template-columns: repeat(2, 220px)">
+<div class="mega-card">
+<a href="https://www.tesla.com/semi">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Semi.jpg" alt="Semi" loading="lazy">
+</a>
+<h3>Semi</h3>
+<div class="links">
+<a href="https://www.tesla.com/semi">Learn</a>
+</div>
+</div>
+<div class="mega-card">
+<a href="https://www.tesla.com/semi-charging-for-business">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Semi-Charging-For-Business.jpg" alt="Semi Charging for Business" loading="lazy">
+</a>
+<h3>Semi Charging for Business</h3>
+<div class="links">
+<a href="https://www.tesla.com/semi-charging-for-business">Learn</a>
+<a href="https://www.tesla.com/semi-charging-for-business/get">Order</a>
+</div>
+</div>
+</div>
+<ul class="mega-list">
+<li>
+<a href="https://www.tesla.com/findus?filters=tesla_exclusive_megachargers%2Ccoming_soon_megachargers%2Call_megachargers">Find Us</a>
+</li>
+<li>
+<a href="https://business.tesla.com/">Tesla for Business</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Discover -->
+<div class="nav-item">
+<button class="nav-link" type="button" aria-haspopup="true">Discover</button>
+<div class="mega">
+<div class="mega-cols">
+<div>
+<h4>Resources</h4>
+<ul class="mega-list" style="border:0;padding:0">
+<li>
+<a href="https://www.tesla.com/drive">Demo Drive</a>
+</li>
+<li>
+<a href="https://www.tesla.com/insurance">Insurance</a>
+</li>
+<li>
+<a href="https://www.tesla.com/current-offers">Current Offers</a>
+</li>
+<li>
+<a href="https://www.tesla.com/learn">Learn</a>
+</li>
+<li>
+<a href="https://www.tesla.com/support/videos">Video Guides</a>
+</li>
+<li>
+<a href="https://www.tesla.com/customer-stories">Customer Stories</a>
+</li>
+<li>
+<a href="https://www.tesla.com/events">Events</a>
+</li>
+<li>
+<a href="https://www.tesla.com/safety">Safety</a>
+</li>
+</ul>
+</div>
+<div>
+<h4>Location Services</h4>
+<ul class="mega-list" style="border:0;padding:0">
+<li>
+<a href="https://www.tesla.com/findus">Find Us</a>
+</li>
+<li>
+<a href="https://www.tesla.com/support/collision-support">Find a Collision Center</a>
+</li>
+<li>
+<a href="https://www.tesla.com/support/certified-installers">Find a Certified Installer</a>
+</li>
+</ul>
+</div>
+<div>
+<h4>Company</h4>
+<ul class="mega-list" style="border:0;padding:0">
+<li>
+<a href="https://www.tesla.com/about">About</a>
+</li>
+<li>
+<a href="https://www.tesla.com/careers">Careers</a>
+</li>
+<li>
+<a href="https://ir.tesla.com/">Investor Relations</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Shop -->
+<div class="nav-item">
+<a class="nav-link" href="https://shop.tesla.com/">Shop</a>
+<div class="mega">
+<div class="mega-cards mega-cards--4">
+<a class="mega-card" href="https://shop.tesla.com/category/charging">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Shop-Charging.png" alt="" loading="lazy">
+<h3>Charging</h3>
+</a>
+<a class="mega-card" href="https://shop.tesla.com/category/vehicle-accessories">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Shop-Vehicle-Accessories.png" alt="" loading="lazy">
+<h3>Vehicle Accessories</h3>
+</a>
+<a class="mega-card" href="https://shop.tesla.com/category/apparel">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Shop-Apparel.png" alt="" loading="lazy">
+<h3>Apparel</h3>
+</a>
+<a class="mega-card" href="https://shop.tesla.com/category/lifestyle">
+<img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Shop-Lifestyle.png" alt="" loading="lazy">
+<h3>Lifestyle</h3>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<div class="header-icons">
+<a class="icon-btn" href="https://www.tesla.com/support" aria-label="Support">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+<circle cx="12" cy="12" r="9.25">
+</circle>
+<path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.33c-.55.22-.9.74-.9 1.33V14" stroke-linecap="round">
+</path>
+<circle cx="12" cy="17" r=".9" fill="currentColor" stroke="none">
+</circle>
+</svg>
+</a>
+<a class="icon-btn" href="#" aria-label="Region and language">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+<circle cx="12" cy="12" r="9.25">
+</circle>
+<path d="M2.75 12h18.5M12 2.75c2.5 2.6 3.75 5.68 3.75 9.25S14.5 18.65 12 21.25M12 2.75C9.5 5.35 8.25 8.43 8.25 12s1.25 6.65 3.75 9.25">
+</path>
+</svg>
+</a>
+<a class="icon-btn" href="https://www.tesla.com/teslaaccount" aria-label="Account">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+<circle cx="12" cy="12" r="9.25">
+</circle>
+<circle cx="12" cy="10" r="3.25">
+</circle>
+<path d="M5.9 18.6c1.2-2.1 3.4-3.35 6.1-3.35s4.9 1.25 6.1 3.35">
+</path>
+</svg>
+</a>
+</div>
+<!-- Mobile menu (pure CSS checkbox toggle) -->
+<input class="menu-toggle-input" type="checkbox" id="menu-toggle">
+<label class="menu-btn" for="menu-toggle">Menu</label>
+<label class="mobile-scrim" for="menu-toggle" aria-hidden="true">
+</label>
+<nav class="mobile-menu" aria-label="Mobile">
+<label class="close" for="menu-toggle" aria-label="Close menu">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+<path d="M6 6l12 12M18 6L6 18">
+</path>
+</svg>
+</label>
+<a href="https://www.tesla.com/model3">Vehicles <span aria-hidden="true">›</span>
+</a>
+<a href="https://www.tesla.com/solarpanels">Energy <span aria-hidden="true">›</span>
+</a>
+<a href="https://www.tesla.com/charging">Charging <span aria-hidden="true">›</span>
+</a>
+<a href="https://www.tesla.com/robotaxi">Robotaxi <span aria-hidden="true">›</span>
+</a>
+<a href="https://www.tesla.com/semi">Semi <span aria-hidden="true">›</span>
+</a>
+<a href="https://www.tesla.com/learn">Discover <span aria-hidden="true">›</span>
+</a>
+<a href="https://shop.tesla.com/">Shop</a>
+<a href="https://www.tesla.com/support">Support</a>
+<a href="https://www.tesla.com/teslaaccount">Account</a>
+<a href="#">United States · English</a>
+</nav>
+</header>
+<div class="menu-backdrop" aria-hidden="true">
+</div>
+<main id="main-content">
+<!-- ===================== HERO CAROUSEL ===================== -->
+<section class="hero carousel" aria-label="Featured">
+<input type="radio" name="hero" id="hero-1" checked="" aria-label="Slide 1: Roadster">
+<input type="radio" name="hero" id="hero-2" aria-label="Slide 2: Model Y">
+<input type="radio" name="hero" id="hero-3" aria-label="Slide 3: Model 3">
+<div class="hero-track">
+<article class="hero-slide">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Roadster-desktop.jpg" alt="Roadster">
+<h1>
+<img class="roadster-logo" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Roadster-Logo-Final-Tablet.png" alt="Roadster">
+</h1>
+<div class="btn-row">
+<a class="btn btn--primary btn--wide" href="https://www.tesla.com/roadster/reserve">Захиалга өгөх</a>
+<a class="btn btn--light btn--wide" href="https://www.tesla.com/roadster">Learn More</a>
+</div>
+</article>
+<article class="hero-slide hero-slide--dark">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Model-Y-L-Family-Desktop-NA.jpg" alt="Model Y family driving along a city lakefront" loading="lazy">
+<h2>Model Y</h2>
+<a class="sub" href="https://www.tesla.com/modely/design?cfg=%24MTY94&amp;modal=finance&amp;financeModalTab=finance_options&amp;id=finplat.AUTO_LOAN%3ALOAN%3ACT_PRIVATE#overview">2.49% APR Available</a>
+<div class="btn-row">
+<a class="btn btn--primary btn--wide" href="https://www.tesla.com/modely/design?cfg=%24MTY61">Order Now</a>
+<a class="btn btn--light btn--wide" href="modely.html">Learn More</a>
+</div>
+</article>
+<article class="hero-slide hero-slide--dark">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Model-3-Desktop-US.jpg" alt="Model 3 driving through the desert" loading="lazy">
+<h2>Model 3</h2>
+<a class="sub" href="https://www.tesla.com/model3/design?cfg=%24MT379&amp;id=finplat.AUTO_LOAN%3ALOAN%3ACT_PRIVATE#overview">1.99% APR Available</a>
+<div class="btn-row">
+<a class="btn btn--primary btn--wide" href="https://www.tesla.com/model3/design?cfg=%24MT369">Order Now</a>
+<a class="btn btn--light btn--wide" href="https://www.tesla.com/model3">Learn More</a>
+</div>
+</article>
+</div>
+<div class="arrows">
+<label class="arrow arrow--prev a1" for="hero-3" aria-label="Previous slide">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a1" for="hero-2" aria-label="Next slide">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a2" for="hero-1" aria-label="Previous slide">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a2" for="hero-3" aria-label="Next slide">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a3" for="hero-2" aria-label="Previous slide">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a3" for="hero-1" aria-label="Next slide">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+</div>
+<div class="dots">
+<label for="hero-1" aria-label="Go to slide 1">
+</label>
+<label for="hero-2" aria-label="Go to slide 2">
+</label>
+<label for="hero-3" aria-label="Go to slide 3">
+</label>
+</div>
+</section>
+<!-- ===================== FULL SELF-DRIVING ===================== -->
+<section class="section" aria-labelledby="fsd-title">
+<div class="fsd">
+<div class="fsd-copy">
+<h2 id="fsd-title">Full <span class="grad-text">Self-Driving</span>
+<br>(Supervised)</h2>
+<p class="lead">Makes every drive easier. Subscribe for $99/mo.<sup>1</sup>
+</p>
+<div class="stats">
+<div class="stat">
+<strong>7x</strong>
+<span>Fewer Collisions</span>
+</div>
+<div class="stat">
+<strong>17,057,191,373</strong>
+<span>Miles Driven</span>
+</div>
+</div>
+<div class="btn-row">
+<a class="btn btn--dark btn--wide" href="https://www.tesla.com/drive">Schedule Demo</a>
+<a class="btn btn--light btn--wide" href="https://www.tesla.com/fsd">Learn More</a>
+</div>
+</div>
+<div class="fsd-media">
+<video id="fsd-video" autoplay muted loop playsinline preload="metadata" poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-FSD-Card-Desktop-Tablet-Poster.jpg" aria-label="A driver reacting to Full Self-Driving (Supervised) in a Cybertruck">
+<source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-FSD-Card-Mobile.mp4" type="video/mp4" media="(max-width: 599px)">
+<source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-FSD-Card-Desktop.mp4" type="video/mp4">
+</video>
+<button class="play" type="button" id="fsd-toggle" aria-pressed="false">
+<span class="icon">
+<svg class="i-pause" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6 4h4v16H6zM14 4h4v16h-4z"></path></svg>
+<svg class="i-play" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M7 4v16l13-8z"></path></svg>
+</span>
+<span class="label">Pause video</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ===================== VEHICLE CARDS ===================== -->
+<section class="card-carousel carousel" aria-label="Vehicles">
+<input type="radio" name="veh" id="veh-1" checked="" aria-label="Model Y L Premium">
+<input type="radio" name="veh" id="veh-2" aria-label="Model 3">
+<input type="radio" name="veh" id="veh-3" aria-label="Model Y">
+<input type="radio" name="veh" id="veh-4" aria-label="Cybertruck">
+<input type="radio" name="veh" id="veh-5" aria-label="Roadster">
+<input type="radio" name="veh" id="veh-6" aria-label="Certified Pre-Owned">
+<div class="card-track">
+<article class="card">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-Y-L-Desktop-US.jpg" alt="Model Y L" loading="lazy">
+<p class="eyebrow">Long Wheelbase Midsize SUV</p>
+<div>
+<h2>Model Y L Premium</h2>
+<p class="sub">Starting at $61,990<sup>2</sup>
+</p>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/modely/design?cfg=%24MTY83%2C%24PN03">Order Now</a>
+<a class="btn btn--light" href="https://www.tesla.com/modely#L">Learn More</a>
+</div>
+</div>
+</article>
+<article class="card">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg" alt="White Model 3" loading="lazy">
+<p class="eyebrow">Sport Sedan</p>
+<div>
+<h2>Model 3</h2>
+<a class="sub" href="https://www.tesla.com/model3/design?cfg=%24MT367&amp;id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview">Lease From $439/mo</a>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/model3/design?cfg=%24MT367">Order Now</a>
+<a class="btn btn--light" href="https://www.tesla.com/model3">Learn More</a>
+</div>
+</div>
+</article>
+<article class="card">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg" alt="Model Y in the snow" loading="lazy">
+<p class="eyebrow">Midsize SUV</p>
+<div>
+<h2>Model Y</h2>
+<a class="sub" href="https://www.tesla.com/modely/design?cfg=%24MTY61&amp;id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview">Lease From $499/mo</a>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/modely/design">Order Now</a>
+<a class="btn btn--light" href="https://www.tesla.com/modely#performance">Learn More</a>
+</div>
+</div>
+</article>
+<article class="card">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Cybertruck-Desktop-US_PR_MX.jpg" alt="Cybertruck" loading="lazy">
+<p class="eyebrow">Utility Truck</p>
+<div>
+<h2>Cybertruck</h2>
+<a class="sub" href="https://www.tesla.com/cybertruck/design?cfg=%24MTC07&amp;id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview">Lease From $1,129/mo</a>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/cybertruck/design?cfg=%24MTC07">Order Now</a>
+<a class="btn btn--light" href="https://www.tesla.com/cybertruck">Learn More</a>
+</div>
+</div>
+</article>
+<article class="card">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Vehicle-Card-Roadster-Desktop.jpg" alt="Roadster" loading="lazy">
+<p class="eyebrow">Sports Car</p>
+<div>
+<h2>Roadster</h2>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/roadster/reserve">Reserve Now</a>
+<a class="btn btn--light" href="https://www.tesla.com/roadster">Learn More</a>
+</div>
+</div>
+</article>
+<article class="card">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Vehicle-CPO-Desktop.jpg" alt="A row of Certified Pre-Owned Tesla vehicles" loading="lazy">
+<p class="eyebrow">&nbsp;</p>
+<div>
+<h2>Certified Pre-Owned</h2>
+<p class="sub">Fully inspected, refurbished and road ready with an extended one-year warranty.</p>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/inventory/used">View Inventory</a>
+<a class="btn btn--light" href="https://www.tesla.com/certified-pre-owned">Learn More</a>
+</div>
+</div>
+</article>
+</div>
+<div class="arrows">
+<label class="arrow arrow--next a1" for="veh-2" aria-label="Next">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a2" for="veh-1" aria-label="Previous">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a2" for="veh-3" aria-label="Next">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a3" for="veh-2" aria-label="Previous">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a3" for="veh-4" aria-label="Next">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a4" for="veh-3" aria-label="Previous">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a4" for="veh-5" aria-label="Next">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a5" for="veh-4" aria-label="Previous">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a5" for="veh-6" aria-label="Next">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a6" for="veh-5" aria-label="Previous">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+</div>
+<div class="dots">
+<label for="veh-1" aria-label="Go to Model Y L Premium">
+</label>
+<label for="veh-2" aria-label="Go to Model 3">
+</label>
+<label for="veh-3" aria-label="Go to Model Y">
+</label>
+<label for="veh-4" aria-label="Go to Cybertruck">
+</label>
+<label for="veh-5" aria-label="Go to Roadster">
+</label>
+<label for="veh-6" aria-label="Go to Certified Pre-Owned">
+</label>
+</div>
+</section>
+<!-- ===================== PROMO GRID ===================== -->
+<section class="section promo-grid" aria-label="Promotions">
+<article class="promo">
+<div class="promo-copy">
+<h2>Current Offers</h2>
+<h3>Explore limited-time offers on Tesla vehicles.</h3>
+<a class="btn btn--light" href="https://www.tesla.com/current-offers">Learn More</a>
+</div>
+<img class="promo-img--float" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Grid-Current-Offers-All-Devices.png" alt="Cybertruck, Model Y and Model 3" loading="lazy">
+</article>
+<article class="promo">
+<div class="promo-copy">
+<h2>2026 Annual Shareholder Meeting</h2>
+<h3>The future of Tesla is in your hands. Learn why your vote matters.</h3>
+<a class="btn btn--light" href="https://www.votetesla.com/">Learn More</a>
+</div>
+<img class="promo-img--side" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Grid-IR-2026.jpg" alt="Roadster rear view with thrusters" loading="lazy">
+</article>
+</section>
+<!-- ===================== CHARGING MAP ===================== -->
+<section class="section" aria-labelledby="charge-title">
+<div class="map">
+<!--MAP:START-->
+<svg class="map-art" viewBox="0 0 1824 550" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Map of Tesla Superchargers across North America">
+<path d="M151.2 -162.1 L1487.7 -162.1 L1364.4 157.6 L1282.1 183.7 L1220.4 196.7 L1210.1 192.8 L1177.2 208.5 L1173.1 221.5 L1179.3 231.9 L1159.8 238.5 L1138.2 247.6 L1128.9 269.8 L1118.6 294.6 L1122.8 318.1 L1098.1 335.0 L1067.2 359.8 L1062.1 382.0 L1076.5 427.6 L1072.4 448.5 L1058.0 436.8 L1047.7 412.0 L1048.7 387.2 L1032.3 385.9 L1010.7 380.7 L977.8 383.3 L979.9 398.9 L960.3 395.0 L934.6 389.8 L924.3 395.0 L899.7 417.2 L899.7 439.4 L894.5 490.3 L912.0 529.4 L927.4 539.8 L958.3 535.9 L968.5 503.3 L1004.5 496.8 L999.4 542.5 L989.1 575.1 L1045.6 581.6 L1040.5 646.8 L1086.8 659.9 L1107.3 686.0 L1076.5 777.3 L953.1 777.3 L953.1 588.1 L912.0 572.5 L814.3 516.4 L814.3 483.7 L778.4 440.7 L742.4 392.4 L719.8 365.0 L737.2 398.9 L768.1 477.2 L747.5 457.7 L716.7 412.0 L701.2 366.3 L695.1 353.3 L680.7 333.7 L659.1 325.9 L645.7 299.8 L639.6 284.1 L627.2 268.5 L622.1 230.6 L619.0 216.3 L625.2 174.5 L616.9 145.8 L588.2 118.4 L552.2 72.8 L459.6 1.0 L336.3 7.5 L151.2 -5.5 Z" fill="#f2f2f2">
+</path>
+<path d="M952.1 168.0 L978.8 151.1 L1014.8 140.6 L1029.2 170.6 L999.4 170.6 Z" fill="#d4d6d9">
+</path>
+<path d="M996.3 229.3 L1004.5 179.8 L1019.9 179.8 L1010.7 222.8 Z" fill="#d4d6d9">
+</path>
+<path d="M1029.2 178.5 L1059.0 175.8 L1076.5 195.4 L1054.9 215.0 L1040.5 203.2 Z" fill="#d4d6d9">
+</path>
+<path d="M1041.5 233.3 L1087.8 217.6 L1073.4 220.2 L1050.8 229.3 Z" fill="#d4d6d9">
+</path>
+<path d="M1078.5 212.4 L1115.6 200.6 L1114.5 211.1 L1086.8 213.7 Z" fill="#d4d6d9">
+</path>
+<path d="M636.5 138.0 L920.2 138.0 L924.3 132.8 L977.8 151.1 L1027.1 165.4 L1051.8 186.3 L1050.8 216.3 L1044.6 229.3 L1086.8 218.9 L1084.7 209.8 L1114.5 200.6 L1131.0 190.2 L1163.9 190.2 L1187.5 158.9 L1201.9 162.8 L1210.1 192.8" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3">
+</path>
+<path d="M899.7 439.4 L876.0 418.5 L856.5 388.5 L839.0 398.9 L824.6 391.1 L804.1 362.4 L786.6 368.9 L756.8 368.9 L718.7 353.3 L695.1 353.3" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="4 3">
+</path>
+<g stroke="#fff" stroke-width="1">
+<circle cx="927.3" cy="385.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="974.9" cy="272.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1145.4" cy="215.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="966.3" cy="389.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="651.4" cy="182.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="648.5" cy="281.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="730.0" cy="269.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="915.3" cy="389.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="662.7" cy="308.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1023.0" cy="333.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1033.8" cy="374.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1022.2" cy="267.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1000.6" cy="210.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="713.2" cy="298.0" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1112.1" cy="271.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="808.0" cy="233.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1012.3" cy="330.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="902.0" cy="243.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1114.1" cy="271.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="790.9" cy="330.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="676.5" cy="331.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="888.3" cy="395.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1068.9" cy="244.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="787.3" cy="321.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="638.4" cy="175.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="756.1" cy="340.0" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1046.3" cy="341.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1089.5" cy="313.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="854.1" cy="326.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1106.1" cy="286.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="694.2" cy="347.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="649.7" cy="281.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1071.8" cy="437.8" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="898.3" cy="345.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="649.4" cy="281.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1141.4" cy="218.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1032.1" cy="369.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1201.3" cy="184.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1103.7" cy="219.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1028.7" cy="265.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="747.8" cy="233.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="886.2" cy="157.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="643.7" cy="150.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1054.6" cy="419.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="972.0" cy="390.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="656.5" cy="296.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1155.2" cy="222.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1059.8" cy="235.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1004.8" cy="286.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="878.4" cy="178.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="632.7" cy="186.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="649.9" cy="291.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1040.1" cy="342.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="918.1" cy="284.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="676.5" cy="330.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1172.4" cy="215.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="950.2" cy="349.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1077.3" cy="254.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="713.9" cy="294.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1032.7" cy="359.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1079.8" cy="310.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="929.4" cy="192.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1033.9" cy="176.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="776.3" cy="275.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="945.9" cy="187.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1113.8" cy="275.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1136.0" cy="249.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="857.5" cy="298.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1026.6" cy="261.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="675.3" cy="318.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="705.4" cy="335.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1148.0" cy="233.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1062.0" cy="386.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="992.2" cy="312.0" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1005.8" cy="291.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="879.5" cy="357.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="698.4" cy="348.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="819.9" cy="267.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="694.5" cy="348.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1001.4" cy="232.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="877.4" cy="296.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="854.5" cy="292.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="971.3" cy="201.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1096.9" cy="283.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="656.4" cy="280.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="703.6" cy="344.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1017.1" cy="362.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="814.2" cy="258.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="768.9" cy="345.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="720.8" cy="306.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="673.5" cy="324.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="666.3" cy="298.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="640.5" cy="285.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="820.8" cy="246.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1131.9" cy="256.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="852.4" cy="349.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="711.7" cy="224.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1053.2" cy="238.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="966.4" cy="171.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1126.0" cy="253.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="930.5" cy="378.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1094.5" cy="297.0" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1045.0" cy="258.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1141.5" cy="234.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="913.6" cy="331.3" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1126.7" cy="264.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="689.4" cy="326.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="802.5" cy="273.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="681.6" cy="315.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1109.9" cy="258.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1011.7" cy="217.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="995.7" cy="216.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1173.8" cy="211.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="647.6" cy="158.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1144.6" cy="210.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="644.2" cy="188.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="638.2" cy="279.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="625.2" cy="216.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="694.5" cy="161.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1049.3" cy="407.4" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="844.1" cy="376.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="751.1" cy="339.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="791.5" cy="158.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="742.2" cy="340.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1019.2" cy="351.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1001.8" cy="361.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1014.7" cy="296.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="817.7" cy="285.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1104.4" cy="260.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="696.9" cy="346.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="915.4" cy="382.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="656.2" cy="269.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="637.0" cy="174.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1063.4" cy="321.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1007.4" cy="252.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="752.7" cy="247.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1107.0" cy="292.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="710.2" cy="301.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1041.5" cy="336.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1004.6" cy="276.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1003.5" cy="211.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1071.2" cy="232.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1001.2" cy="312.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="709.4" cy="312.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="640.5" cy="157.1" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1010.2" cy="234.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="902.7" cy="377.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="947.6" cy="333.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1041.7" cy="233.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1111.9" cy="272.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="888.0" cy="341.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1167.3" cy="234.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="904.8" cy="220.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="642.1" cy="164.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="914.7" cy="392.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="885.1" cy="333.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="890.8" cy="374.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="695.2" cy="329.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1141.9" cy="221.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1016.8" cy="281.3" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="913.0" cy="383.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="681.6" cy="322.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="696.6" cy="149.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="737.3" cy="337.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1073.4" cy="438.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="692.1" cy="338.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1001.2" cy="345.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="901.6" cy="348.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1015.3" cy="342.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="907.5" cy="266.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="980.0" cy="348.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="918.8" cy="391.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1138.2" cy="243.6" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1065.9" cy="229.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="628.8" cy="178.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1058.5" cy="392.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1139.9" cy="241.1" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="651.7" cy="295.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="894.9" cy="394.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1004.8" cy="247.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="660.6" cy="275.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="842.3" cy="179.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="751.0" cy="360.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1063.0" cy="323.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="644.7" cy="279.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1107.6" cy="268.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1113.2" cy="260.4" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1165.2" cy="225.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="876.5" cy="397.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="827.1" cy="261.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="903.9" cy="380.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="837.3" cy="389.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="872.5" cy="194.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1070.9" cy="434.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1049.0" cy="248.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1083.3" cy="302.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="730.0" cy="248.8" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1052.9" cy="245.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="666.3" cy="295.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="694.7" cy="339.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="987.7" cy="192.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1169.5" cy="215.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="888.5" cy="382.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="713.6" cy="318.2" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1031.4" cy="339.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="693.1" cy="263.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1100.3" cy="279.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="921.5" cy="274.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1001.1" cy="227.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1114.9" cy="281.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="922.4" cy="389.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="737.7" cy="143.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1011.4" cy="343.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1146.5" cy="233.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1170.7" cy="201.1" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="908.1" cy="347.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1008.5" cy="297.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="888.0" cy="399.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="962.5" cy="338.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="883.3" cy="395.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="652.4" cy="194.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1116.8" cy="270.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="805.2" cy="319.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1080.8" cy="305.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="695.3" cy="333.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="919.9" cy="377.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="659.0" cy="306.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1017.1" cy="273.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1116.0" cy="279.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="759.3" cy="339.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="894.9" cy="358.3" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1054.0" cy="373.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="649.9" cy="284.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="649.2" cy="179.1" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1062.7" cy="237.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1053.6" cy="318.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="726.5" cy="354.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="700.3" cy="347.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="695.2" cy="350.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1133.3" cy="244.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="643.8" cy="182.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1031.5" cy="186.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="739.2" cy="343.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="930.8" cy="368.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="916.4" cy="217.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="748.7" cy="326.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1061.4" cy="348.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="816.7" cy="376.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="993.7" cy="234.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="978.8" cy="213.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="822.5" cy="246.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1060.9" cy="380.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="971.1" cy="315.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1147.0" cy="242.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1172.1" cy="227.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="669.4" cy="296.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1100.0" cy="252.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="994.2" cy="361.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="932.7" cy="266.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1133.9" cy="241.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="919.3" cy="184.5" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="672.5" cy="326.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="827.4" cy="230.5" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="644.2" cy="159.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1138.8" cy="246.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1047.2" cy="230.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="905.6" cy="356.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="911.5" cy="383.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="674.6" cy="172.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="665.5" cy="276.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="922.6" cy="392.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1013.1" cy="272.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="899.0" cy="344.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1012.1" cy="218.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="973.2" cy="284.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1002.5" cy="235.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="814.3" cy="276.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="695.1" cy="344.7" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="693.5" cy="346.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1051.2" cy="419.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="683.7" cy="330.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1089.9" cy="221.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="664.2" cy="302.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="893.4" cy="392.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1030.5" cy="294.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1005.2" cy="220.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1133.6" cy="243.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1139.9" cy="208.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1055.8" cy="419.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="800.4" cy="322.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="915.4" cy="263.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1114.4" cy="266.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1142.1" cy="231.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="646.5" cy="281.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1015.5" cy="340.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1111.5" cy="277.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="975.4" cy="375.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1153.1" cy="231.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="681.9" cy="321.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="884.0" cy="307.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="749.7" cy="326.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="933.0" cy="382.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="853.8" cy="384.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1035.2" cy="309.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1112.9" cy="282.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="814.9" cy="260.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="832.0" cy="184.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="918.0" cy="379.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="809.8" cy="258.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1096.6" cy="257.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="657.6" cy="191.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1002.7" cy="346.1" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="644.3" cy="270.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="656.1" cy="296.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1053.6" cy="424.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1115.9" cy="257.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1069.9" cy="437.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1021.3" cy="353.6" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="900.1" cy="315.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1114.3" cy="286.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="962.4" cy="298.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="999.3" cy="232.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1094.6" cy="273.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="981.7" cy="233.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="962.4" cy="268.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="795.8" cy="192.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1044.3" cy="215.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1007.7" cy="203.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="897.6" cy="336.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="694.0" cy="307.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1111.2" cy="285.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1080.9" cy="320.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1113.2" cy="257.0" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1141.8" cy="243.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1166.6" cy="221.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="812.3" cy="255.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1109.5" cy="270.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="700.3" cy="318.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1004.9" cy="304.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1095.0" cy="329.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="901.6" cy="376.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="643.5" cy="286.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="646.5" cy="287.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="637.0" cy="188.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="673.5" cy="254.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1003.8" cy="233.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1108.5" cy="272.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1145.4" cy="233.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="672.9" cy="321.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1117.1" cy="257.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1102.2" cy="275.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="842.7" cy="249.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1133.3" cy="207.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1111.3" cy="262.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="932.5" cy="272.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1083.1" cy="329.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="682.7" cy="320.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1165.9" cy="211.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="756.4" cy="352.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1058.6" cy="379.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1172.2" cy="210.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="761.3" cy="261.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="999.2" cy="223.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1088.1" cy="307.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1168.8" cy="230.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1056.4" cy="418.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1070.8" cy="311.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1120.7" cy="249.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1032.1" cy="264.6" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1174.2" cy="214.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1032.9" cy="266.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="749.1" cy="348.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="696.5" cy="348.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1060.0" cy="431.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="661.8" cy="263.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="649.5" cy="288.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1117.6" cy="272.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="952.7" cy="169.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="651.7" cy="204.9" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1109.8" cy="270.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1068.5" cy="323.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="754.2" cy="333.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="644.2" cy="175.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1138.8" cy="244.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="753.4" cy="158.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="658.7" cy="294.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="930.6" cy="175.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1106.9" cy="283.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1134.4" cy="247.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="780.2" cy="322.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="751.5" cy="346.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1038.3" cy="209.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1010.6" cy="210.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="634.1" cy="155.2" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="646.6" cy="274.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1060.1" cy="409.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1009.1" cy="214.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="660.1" cy="286.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="633.2" cy="266.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1035.4" cy="331.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="655.1" cy="309.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="965.7" cy="387.8" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1128.5" cy="239.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1159.9" cy="210.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="903.4" cy="178.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="653.7" cy="280.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="917.5" cy="389.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="935.1" cy="190.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1169.3" cy="216.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="918.2" cy="391.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1011.1" cy="258.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="716.3" cy="306.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1126.2" cy="254.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1015.4" cy="338.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1074.1" cy="437.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1039.0" cy="225.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="899.9" cy="375.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="710.4" cy="271.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="720.4" cy="192.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="851.9" cy="319.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="932.2" cy="327.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1079.4" cy="345.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="875.1" cy="337.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1159.0" cy="195.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="655.5" cy="289.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1096.6" cy="280.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="969.9" cy="273.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="916.0" cy="262.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1106.3" cy="258.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1056.9" cy="260.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1007.1" cy="256.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="816.7" cy="263.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="999.3" cy="340.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1049.2" cy="252.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="813.1" cy="255.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1027.2" cy="342.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="985.2" cy="234.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="803.3" cy="313.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="885.3" cy="394.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1063.0" cy="392.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="755.4" cy="246.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="971.3" cy="277.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="949.6" cy="330.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="913.0" cy="398.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1105.4" cy="289.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1056.1" cy="227.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="925.4" cy="186.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="879.6" cy="396.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1173.7" cy="232.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="648.3" cy="269.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1050.9" cy="324.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1075.8" cy="427.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="927.4" cy="267.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1008.1" cy="335.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="939.7" cy="138.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1026.2" cy="276.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1053.4" cy="297.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1019.2" cy="253.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1012.3" cy="346.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="909.4" cy="313.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="846.6" cy="345.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="724.2" cy="351.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1108.2" cy="290.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="808.5" cy="260.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="642.2" cy="282.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="864.9" cy="203.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1163.6" cy="212.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="826.2" cy="269.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="654.3" cy="298.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1083.2" cy="274.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="897.1" cy="379.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1017.8" cy="268.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="813.3" cy="227.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="694.8" cy="347.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="965.3" cy="341.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="900.6" cy="388.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="936.8" cy="319.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="705.7" cy="344.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1052.9" cy="418.2" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="924.9" cy="323.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="885.3" cy="398.8" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1063.5" cy="434.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="693.0" cy="346.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="794.5" cy="275.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1040.4" cy="249.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="646.6" cy="294.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="648.6" cy="267.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1105.1" cy="266.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="640.5" cy="269.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="948.4" cy="204.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="916.8" cy="396.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="746.1" cy="153.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="636.9" cy="154.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="756.3" cy="346.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="712.3" cy="307.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="696.1" cy="290.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="748.6" cy="348.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1027.4" cy="326.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="697.8" cy="353.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="826.8" cy="256.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1062.0" cy="394.8" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1109.0" cy="268.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1105.6" cy="275.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="830.5" cy="254.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="655.5" cy="294.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="690.9" cy="331.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="817.6" cy="257.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1113.2" cy="257.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1137.9" cy="238.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="921.2" cy="349.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="644.3" cy="293.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1063.4" cy="424.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="886.1" cy="407.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="651.8" cy="290.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1029.4" cy="219.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="992.2" cy="309.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1119.2" cy="252.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="698.9" cy="212.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1127.5" cy="260.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="903.6" cy="248.4" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="675.8" cy="323.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="811.5" cy="309.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="638.0" cy="174.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1012.2" cy="272.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="707.3" cy="274.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1148.9" cy="214.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1100.8" cy="274.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="919.0" cy="385.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="664.0" cy="309.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="892.1" cy="347.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="722.1" cy="331.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="673.3" cy="226.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="975.4" cy="264.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="997.7" cy="316.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1006.6" cy="372.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="658.4" cy="283.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1067.7" cy="408.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1110.8" cy="218.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="653.1" cy="280.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="913.8" cy="294.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="816.2" cy="261.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="676.3" cy="330.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="625.8" cy="187.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1085.3" cy="317.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1099.8" cy="270.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="963.9" cy="287.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1027.3" cy="330.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="875.2" cy="342.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="987.4" cy="197.1" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1108.1" cy="267.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="993.3" cy="338.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="903.6" cy="351.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1109.4" cy="263.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="910.7" cy="392.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1027.2" cy="333.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="707.8" cy="304.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1040.6" cy="328.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="679.7" cy="331.0" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="691.3" cy="140.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="684.0" cy="191.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="701.5" cy="351.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="704.3" cy="208.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="636.6" cy="182.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="637.1" cy="142.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1010.9" cy="309.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="824.2" cy="212.0" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1147.4" cy="213.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1078.8" cy="310.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="690.3" cy="161.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="750.6" cy="331.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="644.5" cy="292.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="816.0" cy="267.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1065.3" cy="437.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1022.3" cy="328.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="651.3" cy="164.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="691.4" cy="344.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="885.8" cy="393.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="913.0" cy="347.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="746.1" cy="330.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1005.9" cy="340.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="644.1" cy="275.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1135.4" cy="208.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1098.9" cy="282.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="820.7" cy="274.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1097.1" cy="279.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="678.1" cy="324.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="906.3" cy="336.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="635.2" cy="180.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1068.0" cy="433.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="821.1" cy="256.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="801.5" cy="329.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="823.7" cy="162.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="690.8" cy="318.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="833.3" cy="208.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="694.2" cy="341.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="897.1" cy="373.9" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1173.3" cy="229.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1008.7" cy="296.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1004.4" cy="324.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="911.7" cy="345.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1098.4" cy="279.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="746.2" cy="339.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1089.5" cy="318.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="700.6" cy="342.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1158.9" cy="219.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1070.4" cy="259.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1137.6" cy="234.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1016.8" cy="259.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="988.4" cy="244.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="686.7" cy="330.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1084.6" cy="232.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="649.3" cy="272.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="766.3" cy="143.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1095.0" cy="275.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="905.8" cy="352.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="662.5" cy="249.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1020.2" cy="310.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="715.1" cy="298.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="668.2" cy="313.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="879.2" cy="157.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1090.6" cy="198.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1086.5" cy="210.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1082.8" cy="217.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1081.3" cy="202.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1067.6" cy="206.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1088.4" cy="200.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1076.2" cy="210.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1069.6" cy="212.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1086.4" cy="196.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1074.7" cy="199.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1085.6" cy="209.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1098.0" cy="220.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1082.2" cy="206.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1097.5" cy="197.6" r="3.6" fill="#5c5e62">
+</circle>
+<circle cx="1098.5" cy="206.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1089.5" cy="199.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1086.2" cy="205.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1081.4" cy="209.3" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1134.9" cy="174.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1139.6" cy="193.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1143.9" cy="183.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1143.3" cy="175.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1141.7" cy="184.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1137.8" cy="183.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1139.7" cy="182.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1161.0" cy="181.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1137.1" cy="174.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1147.5" cy="179.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1124.3" cy="181.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1124.1" cy="179.6" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1125.7" cy="179.8" r="3.6" fill="#e82127">
+</circle>
+<circle cx="1118.2" cy="185.0" r="3.6" fill="#e82127">
+</circle>
+<circle cx="630.5" cy="131.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="636.7" cy="135.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="635.7" cy="126.1" r="3.6" fill="#e82127">
+</circle>
+<circle cx="638.3" cy="137.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="633.0" cy="132.2" r="3.6" fill="#e82127">
+</circle>
+<circle cx="633.2" cy="132.9" r="3.6" fill="#e82127">
+</circle>
+<circle cx="734.0" cy="110.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="720.4" cy="108.7" r="3.6" fill="#e82127">
+</circle>
+<circle cx="726.4" cy="111.4" r="3.6" fill="#e82127">
+</circle>
+<circle cx="729.8" cy="83.5" r="3.6" fill="#e82127">
+</circle>
+<circle cx="727.1" cy="80.4" r="3.6" fill="#e82127">
+</circle>
+</g>
+<text x="896.6" y="262.0" font-size="16" font-weight="600" fill="#222" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">United States</text>
+<text x="870.9" y="72.8" font-size="11" font-weight="500" fill="#777" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">CANADA</text>
+<text x="850.3" y="464.2" font-size="11" font-weight="500" fill="#777" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">MEXICO</text>
+<text x="641.6" y="152.4" font-size="11" font-weight="400" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">Seattle</text>
+<text x="683.8" y="341.5" font-size="11" font-weight="400" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">Los Angeles</text>
+<text x="903.8" y="342.8" font-size="11" font-weight="400" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">Dallas</text>
+<text x="998.4" y="224.1" font-size="11" font-weight="400" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">Chicago</text>
+<text x="1146.4" y="251.5" font-size="11" font-weight="400" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">New York</text>
+<text x="1074.4" y="445.9" font-size="11" font-weight="400" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">Miami</text>
+<text x="820.5" y="252.8" font-size="11" font-weight="400" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">Denver</text>
+<text x="1232.8" y="355.9" font-size="11" font-weight="500" fill="#555" text-anchor="middle" font-family="Arial, sans-serif" stroke="#f2f2f2" stroke-width="3" paint-order="stroke">Bermuda</text>
+</svg>
+<!--MAP:END-->
+<a class="find-me" href="https://www.tesla.com/findus">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 18.3c3.66 0 6.63-2.82 6.63-6.3S15.66 5.7 12 5.7 5.37 8.52 5.37 12 8.34 18.3 12 18.3Zm0-1.8c2.62 0 4.74-2.01 4.74-4.5S14.62 7.5 12 7.5 7.26 9.51 7.26 12s2.12 4.5 4.74 4.5Z" fill="#393C41">
+</path>
+<ellipse cx="12" cy="12" rx="1.9" ry="1.8" fill="#393C41">
+</ellipse>
+<rect x="11.05" y="3" width="1.9" height="3.6" rx=".95" fill="#393C41">
+</rect>
+<rect x="11.05" y="17.4" width="1.9" height="3.6" rx=".95" fill="#393C41">
+</rect>
+<rect x="3" y="11.1" width="3.8" height="1.8" rx=".9" fill="#393C41">
+</rect>
+<rect x="17.2" y="11.1" width="3.8" height="1.8" rx=".9" fill="#393C41">
+</rect>
+</svg>
+          Find Me
+        </a>
+<a class="fullscreen" href="https://www.tesla.com/findus" aria-label="Open full map">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+<path fill="#666" d="m12 19.175 2.125-2.125 1.425 1.4L12 22l-3.55-3.55 1.425-1.4zM4.825 12l2.125 2.125-1.4 1.425L2 12l3.55-3.55 1.4 1.425zm14.35 0L17.05 9.875l1.4-1.425L22 12l-3.55 3.55-1.4-1.425zM12 4.825 9.875 6.95 8.45 5.55 12 2l3.55 3.55-1.425 1.4z">
+</path>
+</svg>
+</a>
+<span class="attribution">Illustrative map</span>
+</div>
+<div class="charge-info">
+<div>
+<h2 id="charge-title">Find Your Charge</h2>
+<h4>View the network of Tesla Superchargers and Destination Chargers available near you.</h4>
+<div class="btn-row">
+<a class="btn btn--dark" href="https://www.tesla.com/findus">View Network</a>
+<a class="btn btn--ghost" href="https://www.tesla.com/charging">Learn More</a>
+</div>
+</div>
+<div class="charge-stats">
+<div class="charge-stat">
+<div class="num">39,597
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<rect x=".23" y=".23" width="23.54" height="23.54" rx="11.77" fill="#FF3A3A" stroke="#F4F4F4" stroke-width=".46">
+</rect>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.334 10.449c0 .146.12.265.267.265h3.91c.205 0 .333.223.23.4l-4.573 7.829c-.137.235-.497.138-.497-.134v-5.257a.266.266 0 0 0-.266-.265H7.49a.266.266 0 0 1-.23-.4l4.578-7.833c.137-.234.497-.137.497.134v5.26Z" fill="#fff">
+</path>
+</svg>
+</div>
+<h4>Superchargers</h4>
+</div>
+<div class="charge-stat">
+<div class="num">401
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<rect x=".23" y=".23" width="23.54" height="23.54" rx="11.77" fill="#929292" stroke="#F4F4F4" stroke-width=".46">
+</rect>
+<path d="M9.523 5.454v2.3H8.108a.708.708 0 0 0-.708.707v4.954a2.831 2.831 0 0 0 2.831 2.831h3.539a2.831 2.831 0 0 0 2.83-2.83V8.46a.708.708 0 0 0-.707-.707h-1.416v-2.3a.53.53 0 1 0-1.061 0v2.3h-2.831v-2.3a.53.53 0 1 0-1.062 0Zm.354 12.915c0 .391.317.708.708.708h2.83a.708.708 0 0 0 .708-.708V17.13a.177.177 0 0 0-.177-.177h-3.892a.177.177 0 0 0-.177.177v1.238Z" fill="#fff">
+</path>
+</svg>
+</div>
+<h4>Destination Chargers</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- ===================== ENERGY CARDS ===================== -->
+<section class="card-carousel carousel" aria-label="Energy">
+<input type="radio" name="en" id="en-1" checked="" aria-label="Solar Panels">
+<input type="radio" name="en" id="en-2" aria-label="Powerwall">
+<input type="radio" name="en" id="en-3" aria-label="Megapack">
+<div class="card-track">
+<article class="card card--energy">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Panels-Desktop-v2.jpg" alt="Solar Panels installed on a roof" loading="lazy">
+<div>
+<h2>Solar Panels</h2>
+<p class="sub">Power Your Home and Reduce Your Electricity Bill</p>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/energy/design?poi=solarpanels">Order Now</a>
+<a class="btn btn--light" href="https://www.tesla.com/solarpanels">Learn More</a>
+</div>
+</div>
+</article>
+<article class="card card--energy">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Powerwall-Desktop.png" alt="Powerwall" loading="lazy">
+<div>
+<h2>Powerwall</h2>
+<p class="sub">Keep Your Lights On During Outages</p>
+<div class="btn-row">
+<a class="btn btn--primary" href="https://www.tesla.com/powerwall/design">Order Now</a>
+<a class="btn btn--light" href="https://www.tesla.com/powerwall">Learn More</a>
+</div>
+</div>
+</article>
+<article class="card card--energy">
+<img class="bg" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Megapack-Desktop-v2.jpg" alt="Megapack installation in the desert" loading="lazy">
+<div>
+<h2>Megapack</h2>
+<p class="sub">Massive Batteries for Massive Energy Support</p>
+<div class="btn-row">
+<a class="btn btn--light" href="https://www.tesla.com/megapack">Learn More</a>
+</div>
+</div>
+</article>
+</div>
+<div class="arrows">
+<label class="arrow arrow--next a1" for="en-2" aria-label="Next">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a2" for="en-1" aria-label="Previous">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--next a2" for="en-3" aria-label="Next">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6z">
+</path>
+</svg>
+</label>
+<label class="arrow arrow--prev a3" for="en-2" aria-label="Previous">
+<svg viewBox="0 0 24 24">
+<path fill="currentColor" d="m14 18-6-6 6-6 1.4 1.4-4.6 4.6 4.6 4.6z">
+</path>
+</svg>
+</label>
+</div>
+<div class="dots">
+<label for="en-1" aria-label="Go to Solar Panels">
+</label>
+<label for="en-2" aria-label="Go to Powerwall">
+</label>
+<label for="en-3" aria-label="Go to Megapack">
+</label>
+</div>
+</section>
+<!-- ===================== FOOTNOTES ===================== -->
+<div class="footnotes">
+<p>
+<sup>1</sup> Price reflects monthly subscription, subject to terms and conditions. Price and feature availability subject to change.</p>
+<p>
+<sup>2</sup> Price listed does not include Destination and Order Fees, taxes and other fees. Subject to change. The Model Y L Premium starting price including the Destination and Order fees but excluding taxes and other fees is $63,630.</p>
+</div>
+</main>
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+<h2 class="sr-only">Footer menu</h2>
+<ul>
+<li>
+<a href="https://www.tesla.com/about">Tesla © 2026</a>
+</li>
+<li>
+<a href="https://www.tesla.com/legal">Privacy &amp; Legal</a>
+</li>
+<li>
+<a href="https://service.tesla.com/en-US/vin-recall-search">Vehicle Recalls</a>
+</li>
+<li>
+<a href="https://www.tesla.com/contact">Contact</a>
+</li>
+<li>
+<a href="https://www.tesla.com/blog">News</a>
+</li>
+<li>
+<a href="https://www.tesla.com/updates">Get Updates</a>
+</li>
+<li>
+<a href="https://www.tesla.com/findus/list">Locations</a>
+</li>
+<li>
+<a href="https://www.tesla.com/learn">Learn</a>
+</li>
+</ul>
+</footer>
+<!-- ===================== ASSIST BAR ===================== -->
+<div class="assist" role="complementary" aria-label="Tesla Assist">
+<a class="assist-ask" href="https://www.tesla.com/support">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+<path fill="#5c5e62" d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4 3.5V16h-.5A1.5 1.5 0 0 1 4 14.5z">
+</path>
+<circle cx="8.5" cy="10" r="1" fill="#fff">
+</circle>
+<circle cx="12" cy="10" r="1" fill="#fff">
+</circle>
+<circle cx="15.5" cy="10" r="1" fill="#fff">
+</circle>
+</svg>
+<span>Ask a Question</span>
+<span class="placeholder">"Compare Model 3 and Model Y"</span>
+<span class="send">
+<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+<path fill="#fff" d="M11 20V7.8l-5.6 5.6L4 12l8-8 8 8-1.4 1.4L13 7.8V20z">
+</path>
+</svg>
+</span>
+</a>
+<a class="assist-drive" href="https://www.tesla.com/drive">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="9.5" fill="none" stroke="#3e6ae1" stroke-width="2">
+</circle>
+<path fill="#3e6ae1" d="M3 11.5c3-1.4 6-2 9-2s6 .6 9 2v1.2c-2.5-.4-4.6.6-5.6 2.3l-1.7 4.8h-3.4L8.6 15C7.6 13.3 5.5 12.3 3 12.7z">
+</path>
+<circle cx="12" cy="13.5" r="1.6" fill="#fff">
+</circle>
+</svg>
+<span>Schedule a Drive Today</span>
+</a>
+</div>
+<script>
+  // FSD video play / pause
+  (function () {
+    var video = document.getElementById('fsd-video');
+    var btn = document.getElementById('fsd-toggle');
+    if (!video || !btn) return;
+    function sync() {
+      var paused = video.paused;
+      btn.classList.toggle('is-paused', paused);
+      btn.querySelector('.label').textContent = paused ? 'Play video' : 'Pause video';
+      btn.setAttribute('aria-pressed', String(paused));
+    }
+    btn.addEventListener('click', function () { video.paused ? video.play() : video.pause(); });
+    video.addEventListener('play', sync);
+    video.addEventListener('pause', sync);
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) video.pause();
+    sync();
+  })();
+</script>
 </body>
 </html>

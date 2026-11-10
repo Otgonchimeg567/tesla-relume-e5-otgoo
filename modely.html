@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Model Y — Tesla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- model3.css holds the shared vehicle-page styles (m3-* classes) -->
+  <link rel="stylesheet" href="model3.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__brand">
+        <a href="index.html" class="logo" aria-label="Нүүр хуудас"><img src="assets/tesla-wordmark.svg" width="120" height="12" alt="Tesla" /></a>
+      </div>
+      <nav class="navbar__links" id="nav-links">
+        <a href="model3.html" class="nav-link">Model3</a>
+        <a href="modely.html" class="nav-link is-active" aria-current="page">Model Y</a>
+        <a href="#" class="nav-link">Цэнэглэлт</a>
+        <a href="#" class="nav-link">Роботакси</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="#" class="btn btn--primary btn--sm">Туршиж үзэх</a>
+        <button type="button" class="navbar__toggle" aria-label="Цэс" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero__bg" src="assets/modely/hero.jpg" alt="" />
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title">Model Y</h1>
+          <a href="#" class="hero__subtitle">2.49% хүүтэй зээл</a>
+        </div>
+        <div class="hero__actions">
+          <a href="#" class="hero__btn hero__btn--blue">Захиалах</a>
+          <a href="#specs" class="hero__btn hero__btn--white">Үзүүлэлт</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Model Y -->
+    <section class="section">
+      <div class="container stack-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Model Y-тай танилц</h2>
+          <p class="text-medium">Цахилгаан дунд SUV. Model Y бүрт байдаг онцлогууд.</p>
+        </div>
+        <div class="slider" data-slider>
+          <div class="slider__track" data-track>
+            <figure class="m3-card"><img src="assets/modely/meet-safety.jpg" alt="" /><figcaption>Аюулгүй байдал</figcaption></figure>
+            <figure class="m3-card"><img src="assets/modely/meet-convenience.jpg" alt="" /><figcaption>Тав тух</figcaption></figure>
+            <figure class="m3-card"><img src="assets/modely/meet-fsd.jpg" alt="" /><figcaption>Автомат жолоодлого</figcaption></figure>
+            <figure class="m3-card"><img src="assets/modely/meet-warranty.jpg" alt="" /><figcaption>Баталгаа</figcaption></figure>
+            <figure class="m3-card"><img src="assets/modely/meet-utility.jpg" alt="" /><figcaption>Багтаамж</figcaption></figure>
+            <figure class="m3-card"><img src="assets/modely/meet-entertainment.jpg" alt="" /><figcaption>Энтертайнмент</figcaption></figure>
+          </div>
+          <div class="slider__controls">
+            <span></span>
+            <div class="slider__buttons">
+              <button type="button" class="slider__arrow" data-prev aria-label="Өмнөх"><img src="assets/arrow-back.svg" width="24" height="24" alt="" /></button>
+              <button type="button" class="slider__arrow" data-next aria-label="Дараах"><img src="assets/arrow-forward.svg" width="24" height="24" alt="" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore trims (tabs) -->
+    <section class="section">
+      <div class="container">
+        <div class="card m3-explore" data-tabs>
+          <div class="m3-explore__media">
+            <img data-panel="standard" src="assets/modely/toggle-standard.jpg" alt="Model Y" />
+            <img data-panel="premium" src="assets/modely/toggle-premium.jpg" alt="Model Y Premium" hidden />
+            <img data-panel="long" src="assets/modely/toggle-l.jpg" alt="Model Y L" hidden />
+            <img data-panel="performance" src="assets/modely/toggle-performance.jpg" alt="Model Y Performance" hidden />
+          </div>
+          <div class="card__body">
+            <h2 class="h2">Хувилбараа сонго</h2>
+            <div class="m3-tabs" role="tablist">
+              <button type="button" role="tab" class="m3-tab is-active" data-tab="standard" aria-selected="true">Model Y</button>
+              <button type="button" role="tab" class="m3-tab" data-tab="premium" aria-selected="false">Premium</button>
+              <button type="button" role="tab" class="m3-tab" data-tab="long" aria-selected="false">Model Y L</button>
+              <button type="button" role="tab" class="m3-tab" data-tab="performance" aria-selected="false">Performance</button>
+            </div>
+
+            <div data-panel="standard">
+              <p class="m3-price">2.49% хүүтэй зээл</p>
+              <dl class="m3-stats">
+                <div><dt>321 <small>миль</small></dt><dd>Явах зай</dd></div>
+                <div><dt>5 <small>од</small></dt><dd>Аюулгүйн үнэлгээ</dd></div>
+                <div><dt>74 <small>фут³</small></dt><dd>Ачааны багтаамж</dd></div>
+              </dl>
+            </div>
+            <div data-panel="premium" hidden>
+              <p class="m3-price">2.49% хүүтэй зээл</p>
+              <dl class="m3-stats">
+                <div><dt>327 <small>миль</small></dt><dd>Явах зай</dd></div>
+                <div><dt>4.3 <small>сек</small></dt><dd>0–60 миль/ц</dd></div>
+                <div><dt>169 <small>миль</small></dt><dd>15 минутад цэнэглэнэ</dd></div>
+              </dl>
+            </div>
+            <div data-panel="long" hidden>
+              <p class="m3-price">Урт тэнхлэг · $61,990-өөс</p>
+              <dl class="m3-stats">
+                <div><dt>332 <small>миль</small></dt><dd>Явах зай</dd></div>
+                <div><dt>6</dt><dd>Суудал</dd></div>
+                <div><dt>172 <small>миль</small></dt><dd>15 минутад цэнэглэнэ</dd></div>
+              </dl>
+            </div>
+            <div data-panel="performance" hidden>
+              <p class="m3-price">3.99% хүүтэй зээл</p>
+              <dl class="m3-stats">
+                <div><dt>306 <small>миль</small></dt><dd>Явах зай</dd></div>
+                <div><dt>3.3 <small>сек</small></dt><dd>0–60 миль/ц</dd></div>
+                <div><dt>155 <small>миль/ц</small></dt><dd>Дээд хурд</dd></div>
+              </dl>
+            </div>
+
+            <div class="actions">
+              <a href="#" class="btn btn--primary">Захиалах</a>
+              <a href="#" class="btn btn--secondary">Харьцуулах</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Everything you want -->
+    <section class="section">
+      <div class="container stack-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Хүссэн бүхэн</h2>
+          <p class="text-medium">Хурц шугам, аэродинамик дугуй. Бага эрчим хүчээр хол, хурдан.</p>
+        </div>
+        <div class="m3-grid-3">
+          <div class="stat"><p class="h6">5 суудал</p><p>Гэр бүл, найз нөхдөө дагуул.</p></div>
+          <div class="stat"><p class="h6">Их ачаа</p><p>74 фут³ багтаамж. Арын суудал хавтгай эвхэгдэнэ.</p></div>
+          <div class="stat"><p class="h6">Тав тух</p><p>Өргөн салон, халаалттай урд суудал, зөөлөн материал.</p></div>
+        </div>
+
+        <div class="m3-split">
+          <img src="assets/modely/efficiency.jpg" alt="Намрын зам дээрх цагаан Model Y" />
+          <div class="section-title">
+            <h3 class="h2">Хамгийн хэмнэлттэй</h3>
+            <p class="text-medium">АНУ-ын хамгийн хэмнэлттэй цахилгаан SUV. Цэнэглэх зардал бага.</p>
+          </div>
+        </div>
+        <div class="m3-split m3-split--reverse">
+          <img src="assets/modely/range.jpg" alt="Model Y аялалд" />
+          <div class="section-title">
+            <h3 class="h2">Хангалттай зай</h3>
+            <p class="text-medium">Нэг цэнэгээр 321 миль. Аяллын төлөвлөгч Supercharger зогсоолыг автоматаар нэмнэ.</p>
+            <dl class="m3-stats">
+              <div><dt>15 <small>мин</small></dt><dd>160 миль цэнэглэнэ</dd></div>
+              <div><dt>80,000+</dt><dd>Supercharger</dd></div>
+              <div><dt>99 <small>%</small></dt><dd>Ажиллагаа</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="m3-split">
+          <img src="assets/modely/model-y-l.jpg" alt="Model Y L хажуугаас" />
+          <div class="section-title">
+            <h3 class="h2">Урт тэнхлэгтэй Model Y L</h3>
+            <p class="text-medium">Гурван эгнээ суудал, 89 фут³ ачаа. Нам гүм, тансаг салон.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More affordable than gas -->
+    <section class="m3-banner">
+      <img src="assets/modely/affordable.jpg" alt="" />
+      <div class="m3-banner__text">
+        <h2 class="h2">Бензин машинаас хямд</h2>
+        <p class="text-medium">Цэнэглэлт хямд, засвар бага.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container m3-grid-3">
+        <div class="stat"><p class="h6">Цэнэглэлт хямд</p><p>Цахилгаан бензинээс хямд. Шөнө гэртээ цэнэглээд өглөө бүтэн явна.</p></div>
+        <div class="stat"><p class="h6">Засвар бараг үгүй</p><p>Тос солих, тохируулга хэрэггүй. Зөвхөн шил арчигч шингэн, дугуй.</p></div>
+        <div class="stat"><p class="h6">Цөөн эд анги</p><p>Бензин хөдөлгүүрт 1,000+ хөдөлгөөнт эд анги, Tesla-д ердөө 20 орчим.</p></div>
+      </div>
+    </section>
+
+    <!-- Always connected -->
+    <section class="section">
+      <div class="container stack-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Утсаар удирд</h2>
+          <p class="text-medium">Tesla апп-аар машинаа хаанаас ч хянана.</p>
+        </div>
+        <div class="m3-grid-4">
+          <div class="stat"><p class="h6">Агаар тохируулах</p><p>Салоноо урьдчилан халааж, хөргөнө. Тэжээвэр, кемп горимтой.</p></div>
+          <div class="stat"><p class="h6">Нэг товшилтоор түгжих</p><p>Байхгүй үедээ бусдад хандах эрх өгнө.</p></div>
+          <div class="stat"><p class="h6">Харуул горим</p><p>Машины эргэн тойрныг камераар хянана.</p></div>
+          <div class="stat"><p class="h6">Цэнэг хянах</p><p>Цэнэглэх цагаа тохируулж, явцыг харна.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety -->
+    <section class="section">
+      <div class="container">
+        <div class="card card--cta">
+          <div class="card__body">
+            <div class="section-title">
+              <h2 class="h2">Аюулгүй байдал</h2>
+              <p class="text-medium">Цохилт шингээх бүс, бат бөх салон, олон аюулгүйн дэр.</p>
+              <p>Мөргөлдөхөөс сэрэмжлүүлэх, автомат тоормос, эгнээ хадгалах систем стандартаар.</p>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn--secondary">Дэлгэрэнгүй</a>
+            </div>
+          </div>
+          <div class="card__media"><img src="assets/modely/safety.jpg" alt="Model Y аюулгүй байдал" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Autonomy -->
+    <section class="section">
+      <div class="container stack-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Ирээдүй бол автомат</h2>
+          <p class="text-medium">Автомат тоормос, эгнээ хадгалах систем. FSD-ээр илүү ихийг нээ.</p>
+        </div>
+        <div class="m3-grid-3">
+          <div class="stat"><p class="h6">Автомат жолоодлого (хяналттай)</p><p>Таны хяналтан дор жолоодлогод тусална.</p></div>
+          <div class="stat"><p class="h6">Урд камер</p><p>Илүү сайн харагдац, хялбар зогсоол.</p></div>
+          <div class="stat"><p class="h6">Сохор цэгийн хяналт</p><p>Гэрэл, дэлгэцээр эргэн тойрныг харуулна.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="section" id="specs">
+      <div class="container stack-80">
+        <h2 class="h2">Model Y үзүүлэлт</h2>
+        <div class="m3-specs">
+          <img src="assets/modely/specs.png" alt="Model Y хэмжээс" />
+          <div class="m3-specs__table">
+            <h3 class="h6">Жолоодлого</h3>
+            <dl>
+              <div><dt>Явах зай</dt><dd>321 миль</dd></div>
+              <div><dt>Хурдатгал</dt><dd>6.8 сек, 0–60 миль/ц</dd></div>
+              <div><dt>Хөтлөгч</dt><dd>Арын хөтлөгчтэй</dd></div>
+            </dl>
+            <h3 class="h6">Хэмжээс</h3>
+            <dl>
+              <div><dt>Жин</dt><dd>4,061 фунт</dd></div>
+              <div><dt>Ачаа</dt><dd>74 фут³</dd></div>
+              <div><dt>Дугуй</dt><dd>18" эсвэл 19"</dd></div>
+              <div><dt>Суудал</dt><dd>5</dd></div>
+              <div><dt>Дэлгэц</dt><dd>16" төв дэлгэц</dd></div>
+              <div><dt>Газраас өндөр</dt><dd>6.4"</dd></div>
+              <div><dt>Өргөн</dt><dd>78" (толь эвхсэн)</dd></div>
+              <div><dt>Өндөр</dt><dd>63.8"</dd></div>
+              <div><dt>Урт</dt><dd>188.7"</dd></div>
+            </dl>
+            <h3 class="h6">Цэнэглэлт</h3>
+            <dl>
+              <div><dt>Supercharger</dt><dd>225 кВт хүртэл</dd></div>
+              <div><dt>Хурд</dt><dd>15 минутад 160 миль</dd></div>
+            </dl>
+            <h3 class="h6">Баталгаа</h3>
+            <dl>
+              <div><dt>Машин</dt><dd>4 жил эсвэл 50,000 миль</dd></div>
+              <div><dt>Батарей, мотор</dt><dd>8 жил эсвэл 100,000 миль</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End CTA -->
+    <section class="hero hero--end">
+      <img class="hero__bg" src="assets/modely/end.jpg" alt="" />
+      <div class="hero__content">
+        <div class="hero__text">
+          <h2 class="hero__title">Model Y</h2>
+        </div>
+        <div class="hero__actions">
+          <a href="#" class="hero__btn hero__btn--blue">Өөрийнхөөрөө тохируул</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="index.html" class="footer__logo" aria-label="Нүүр хуудас"><img src="assets/tesla-wordmark-white.svg" width="120" height="12" alt="Tesla" /></a>
+    <nav aria-label="Footer цэс">
+      <ul class="footer__links">
+        <li><a href="#">Tesla © 2026</a></li>
+        <li><a href="#">Нууцлал ба хууль</a></li>
+        <li><a href="#">Эргүүлэн татах</a></li>
+        <li class="hide-on-phone"><a href="#">Холбоо барих</a></li>
+        <li><a href="#">Мэдээ</a></li>
+        <li class="hide-on-phone"><a href="#">Мэдээлэл авах</a></li>
+        <li class="hide-on-phone"><a href="#">Байршил</a></li>
+        <li><a href="#">Суралцах</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
