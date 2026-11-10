@@ -246,6 +246,9 @@ body:has(.desktop-nav .nav-item:focus-within .mega) .menu-backdrop { opacity: 1;
 }
 .hero-slide .btn-row { justify-content: center; margin-top: 24px; }
 .hero-slide--dark { color: var(--ink); }
+/* clickable model title -> detail page */
+.title-link { text-underline-offset: 6px; text-decoration-thickness: 2px; }
+.title-link:hover { text-decoration: underline; }
 .hero-slide--dark .sub { color: var(--ink-2); }
 
 .hero .dots { position: absolute; left: 0; right: 0; bottom: 18px; z-index: 3; }
